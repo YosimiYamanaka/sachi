@@ -297,6 +297,95 @@ input[type=submit]:focus {
   }
 }
 
+#title2 {
+  font-family: 'geneiantique';
+  color: #000000;
+  /* トップ画像に重なる文字の色 */
+  text-shadow: 2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0 0 #ffffff, 0 2px 0 #ffffff, -2px 0 0 #ffffff, 0 -2px 0 #ffffff;
+  /* トップ画像に重なる文字のふちどりの色です
+      色変更したい場合は 上記のコードの #ffffff をすべて希望の色に変えてください   */
+  border-right: solid 2px #000000;
+  border-left: solid 2px #000000;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: fixed;
+  left: calc(30% - 350px);
+  width: 20%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+@media (max-width: 1199px) {
+  #title2 {
+    left: calc(20% - 190px);
+    width: 23%;
+  }
+}
+
+@media (max-width: 991px) {
+  #title2 {
+    left: calc(20% - 150px);
+    width: calc(18% + 15px);
+  }
+}
+
+@media (max-width: 766px) {
+  #title2 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+#title2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+#title2 .title__inner {
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  /* サイト名と説明文の位置です */
+}
+
+#title2 .title__inner h1 {
+  font-size: 200%;
+  vertical-align: bottom;
+  line-height: 1em;
+}
+
+#title2 .title__inner p {
+  font-size: 16px;
+  padding: 0;
+  margin: 10px 10px 0 0;
+  line-height: 1.6em;
+}
+
+@media (max-width: 766px) {
+  #title2 .title__inner {
+    left: 12%;
+  }
+  #title2 .title__inner h1 {
+    font-size: 150%;
+  }
+  #title2 .title__inner p {
+    font-size: 15px;
+  }
+}
+
 #headernav {
   /* ここから１カラムデザインのメニューバースクロール追従 */
   position: -webkit-sticky;
