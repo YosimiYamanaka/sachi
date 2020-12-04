@@ -454,7 +454,7 @@ input[type=submit]:focus {
 }
 
 #headernav nav ul li a {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   font-family: 'geneiantique';
   display: block;
@@ -478,7 +478,7 @@ input[type=submit]:focus {
     flex-wrap: wrap;
   }
   #headernav nav ul li a {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
