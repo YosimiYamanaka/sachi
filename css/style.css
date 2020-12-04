@@ -210,7 +210,7 @@ input[type=submit]:focus {
   font-family: 'geneiantique';
   color: #000000;
   /* トップ画像に重なる文字の色 */
-  text-shadow: 2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0 0 #ffffff, 0 2px 0 #ffffff, -2px 0 0 #ffffff, 0 -2px 0 #ffffff;
+  text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0 0 #ffffff, 0 1px 0 #ffffff, -1px 0 0 #ffffff, 0 -1px 0 #ffffff;
   /* トップ画像に重なる文字のふちどりの色です
       色変更したい場合は 上記のコードの #ffffff をすべて希望の色に変えてください   */
   border-right: solid 2px #000000;
